@@ -26,7 +26,6 @@ int main(int argc, char** argv)
   // flags what to run
   bool flagData    = 1; // if 1, data will be processed
   bool flagMCsig   = 1; // if 1, signal MC (dileptonic decay channel) will be processed
-  bool flagMCother = 1; // if 1, signal MC 'other' decay channels will be processed to form background MC histograms
   bool flagMCstop  = 1; // if 1, MC single top (background) will be processed
   bool flagMCwjets = 1; // if 1, MC W+jets (background) will be processed
   bool flagMCdy    = 1; // if 1, MC Drell-Yan (background) will be processed
@@ -182,7 +181,7 @@ int main(int argc, char** argv)
     // number of events: 78347691
     // MC cross section -> theory: 25430 -> 31314
     // weight: 2500.0 / (78347691. / (25430. * 0.32)) * (31314. / 25430.) = 0.3197
-    if(flagMCstop)
+    if(flagMCwjets)
     {
       ZEventRecoInput in;
       //in.MaxNEvents = 1000;
@@ -199,7 +198,7 @@ int main(int argc, char** argv)
     // *****************************************
     // here separate samples exist for low and high masses, 
     // therefore separate weights calculated below
-    if(flagMCstop)
+    if(flagMCdy)
     {
       ZEventRecoInput in;
       //in.MaxNEvents = 1000;
