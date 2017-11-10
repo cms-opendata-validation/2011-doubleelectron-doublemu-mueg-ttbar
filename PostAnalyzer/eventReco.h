@@ -311,7 +311,7 @@ void eventreco(ZEventRecoInput in)
           break;
         }
       double met = TMath::Sqrt(TMath::Power(preselTree->metPx, 2.0) + TMath::Power(preselTree->metPy, 2.0));
-      // additinal requirement on the missing transverse energy
+      // additional requirement on the missing transverse energy
       if(trig && met > 30.0)
         SelectDilepEE(preselTree, vecLepM, vecLepP, maxPtDiLep);
     }
@@ -328,7 +328,7 @@ void eventreco(ZEventRecoInput in)
           break;
         }
       double met = TMath::Sqrt(TMath::Power(preselTree->metPx, 2.0) + TMath::Power(preselTree->metPy, 2.0));
-      // additinal requirement on the missing transverse energy
+      // additional requirement on the missing transverse energy
       if(trig && met > 30.0)
         SelectDilepMuMu(preselTree, vecLepM, vecLepP, maxPtDiLep);
     }

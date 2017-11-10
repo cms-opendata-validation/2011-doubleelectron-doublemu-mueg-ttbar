@@ -99,7 +99,7 @@ void SelectDilepEMu(const ZTree* preselTree, TLorentzVector& vecLepM, TLorentzVe
         continue;
       TLorentzVector thisMu;
       thisMu.SetPtEtaPhiM(TMath::Abs(preselTree->muPt[mu]), preselTree->muEta[mu], preselTree->muPhi[mu], massMu);
-      // require dilepton mass below 12 GeV
+      // require dilepton mass greater than 12 GeV
       TLorentzVector vecDiLep = thisEl + thisMu;
       if(vecDiLep.M() < 12.0)
         continue;
@@ -145,7 +145,7 @@ void SelectDilepEE(const ZTree* preselTree, TLorentzVector& vecLepM, TLorentzVec
         continue;
       TLorentzVector thisEl2;
       thisEl2.SetPtEtaPhiM(TMath::Abs(preselTree->elPt[el2]), preselTree->elEta[el2], preselTree->elPhi[el2], massEl);
-      // require dilepton mass below 12 GeV
+      // require dilepton mass greater than 12 GeV
       TLorentzVector vecDiLep = thisEl1 + thisEl2;
       if(vecDiLep.M() < 12.0)
         continue;
@@ -195,7 +195,7 @@ void SelectDilepMuMu(const ZTree* preselTree, TLorentzVector& vecLepM, TLorentzV
         continue;
       TLorentzVector thisMu2;
       thisMu2.SetPtEtaPhiM(TMath::Abs(preselTree->muPt[mu2]), preselTree->muEta[mu2], preselTree->muPhi[mu2], massMu);
-      // require dilepton mass below 12 GeV
+      // require dilepton mass greater than 12 GeV
       TLorentzVector vecDiLep = thisMu1 + thisMu2;
       if(vecDiLep.M() < 12.0)
         continue;
