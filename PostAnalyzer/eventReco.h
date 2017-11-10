@@ -119,7 +119,7 @@ void FillHistos(std::vector<ZVarHisto>& VecVarHisto, double w, TLorentzVector* t
       histo->Fill(vecLepM->Pt(), w);
       histo->Fill(vecLepP->Pt(), w);
     }
-    // uknown (not implemented) variable
+    // unknown (not implemented) variable
     // (you can implement more variables here if needed)
     else
     {
