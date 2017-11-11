@@ -297,7 +297,7 @@ int main(int argc, char** argv)
   // rapidity(top)
   TH2F* hr_cs_yt = new TH2F("hr_cs_yt", "", 1, -2.5, 2.5, 1, 0, 0.7);
   hr_cs_yt->GetXaxis()->SetTitle("y(t)");
-  hr_cs_yt->GetYaxis()->SetTitle("#frac{1}{#sigma} #frac{d#sigma}{dt(t)}");
+  hr_cs_yt->GetYaxis()->SetTitle("#frac{1}{#sigma} #frac{d#sigma}{dy(t)}");
   SetCPHRange(hr_cs_yt);
   csIn.VecHR.push_back(hr_cs_yt);
   csIn.VecVar.push_back("yt");
