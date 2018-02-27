@@ -20,7 +20,7 @@ cd ./WorkingArea
 cmsrel CMSSW_5_3_32
 cd ./CMSSW_5_3_32/src
 cmsenv
-git clone https://github.com/cms-opendata-validation/2011-doubleelectron-doublemu-mueg-ttbar.git
+git clone git://github.com/cms-opendata-validation/2011-doubleelectron-doublemu-mueg-ttbar.git
 scram b
 cd 2011-doubleelectron-doublemu-mueg-ttbar/Analyzer
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
